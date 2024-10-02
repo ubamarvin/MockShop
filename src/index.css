@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Article Card Container*/
+
+.Article-Card-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Article Card */
+
+.Article-Card {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
+}
+
+.Article-Card:hover {
+    transform: scale(1.025); /* Enlarge the div by 5% */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.Article-Card img {
+    max-width: 100%;
+    height: auto;
+}
